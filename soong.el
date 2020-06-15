@@ -1,7 +1,5 @@
 (defconst soong-mode-syntax-table
   (let ((table (make-syntax-table)))
-    ;; ' is a string delimiter
-    (modify-syntax-entry ?' "\"" table)
     ;; " is a string delimiter too
     (modify-syntax-entry ?\" "\"" table)
     ;; # is a comment
@@ -31,7 +29,7 @@
 ;; these are not really builtins, but it's nice to have another
 ;; color for them (font-lock-builtin-face)
 (font-lock-add-keywords 'soong-mode
-                        '(("ALL" . font-lock-type-face)
+                        '(("name" . font-lock-type-face)
                           ("ANY" . font-lock-type-face)
                           ("Is" . font-lock-type-face)
                           ("IsNot" . font-lock-type-face)
