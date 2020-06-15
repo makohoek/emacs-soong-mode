@@ -2,8 +2,8 @@
   (let ((table (make-syntax-table)))
     ;; " is a string delimiter too
     (modify-syntax-entry ?\" "\"" table)
-    ;; # is a comment
-    (modify-syntax-entry ?# "<" table)
+    ;; // is a comment
+    (modify-syntax-entry ?/ "<2" table)
     ;; \n is a comment ender
     (modify-syntax-entry ?\n ">" table)
     table))
@@ -37,4 +37,4 @@
                           ("Excludes" . font-lock-type-face)
                           ("ANY" . font-lock-type-face)))
 
-(provide 'soong)
+(provide 'soong-mode)
