@@ -14,17 +14,26 @@
 
 ;; keywords
 (font-lock-add-keywords 'soong-mode
-                        '(("cc_binary" . font-lock-keyword-face)
-                          ("cc_shared" . font-lock-keyword-face)
-                          ("confGroup:" . font-lock-keyword-face)
-                          ("confType:" . font-lock-keyword-face)
-                          ("domain:" . font-lock-keyword-face)
-                          ("domainGroup:" . font-lock-keyword-face)
-                          ("rule:" . font-lock-keyword-face)
-                          ("rule:" . font-lock-keyword-face)
-                          ("sequenceAware:" . font-lock-keyword-face)
-                          ("supConf:" . font-lock-keyword-face)
-                          ("supDomain:" . font-lock-keyword-face)))
+                        '(("cc_benchmark_host" . font-lock-keyword-face)
+                          ("cc_benchmark" . font-lock-keyword-face)
+                          ("cc_binary_host" . font-lock-keyword-face)
+                          ("cc_binary" . font-lock-keyword-face)
+                          ("cc_defaults" . font-lock-keyword-face)
+                          ("cc_genrule" . font-lock-keyword-face)
+                          ("cc_library_headers" . font-lock-keyword-face)
+                          ("cc_library_host_shared" . font-lock-keyword-face)
+                          ("cc_library_host_static" . font-lock-keyword-face)
+                          ("cc_library_shared" . font-lock-keyword-face)
+                          ("cc_library_static" . font-lock-keyword-face)
+                          ("cc_library" . font-lock-keyword-face)
+                          ("cc_object" . font-lock-keyword-face)
+                          ("cc_prebuilt_binary" . font-lock-keyword-face)
+                          ("cc_prebuilt_library_shared" . font-lock-keyword-face)
+                          ("cc_prebuilt_library_static" . font-lock-keyword-face)
+                          ("cc_test" . font-lock-keyword-face)
+                          ("cc_test_host" . font-lock-keyword-face)
+                          ("cc_test_library" . font-lock-keyword-face)))
+
 ;; builtins
 ;; these are not really builtins, but it's nice to have another
 ;; color for them (font-lock-builtin-face)
