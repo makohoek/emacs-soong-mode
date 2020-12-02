@@ -34,16 +34,10 @@
                           ("cc_test_host" . font-lock-keyword-face)
                           ("cc_test_library" . font-lock-keyword-face)))
 
-;; builtins
-;; these are not really builtins, but it's nice to have another
-;; color for them (font-lock-builtin-face)
+;; constants
+;; TODO: add more here
 (font-lock-add-keywords 'soong-mode
-                        '(("name" . font-lock-type-face)
-                          ("ANY" . font-lock-type-face)
-                          ("Is" . font-lock-type-face)
-                          ("IsNot" . font-lock-type-face)
-                          ("Includes" . font-lock-type-face)
-                          ("Excludes" . font-lock-type-face)
-                          ("ANY" . font-lock-type-face)))
+                        '(("true" . font-lock-constant-face)
+                          ("false" . font-lock-constant-face)))
 
 (provide 'soong-mode)
