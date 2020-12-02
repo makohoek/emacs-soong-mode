@@ -40,4 +40,6 @@
                         '(("true" . font-lock-constant-face)
                           ("false" . font-lock-constant-face)))
 
+(add-to-list 'auto-mode-alist '("\\.bp\\'" . soong-mode))
+
 (provide 'soong-mode)
