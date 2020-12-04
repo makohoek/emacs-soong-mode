@@ -1,3 +1,11 @@
+;;; soong-mode.el --- Emacs major mode for Android Soong Build system
+
+
+;;; Commentary:
+;;
+
+;;; Code:
+
 (defconst soong-mode-syntax-table
   (let ((table (make-syntax-table)))
     ;; " is a string delimiter too
@@ -43,3 +51,7 @@
 (add-to-list 'auto-mode-alist '("\\.bp\\'" . soong-mode))
 
 (provide 'soong-mode)
+
+(provide 'soong-mode)
+
+;;; soong-mode.el ends here
