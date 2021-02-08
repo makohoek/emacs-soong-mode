@@ -52,6 +52,4 @@
 
 (provide 'soong-mode)
 
-(provide 'soong-mode)
-
 ;;; soong-mode.el ends here
